@@ -45,12 +45,12 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   scrolling="auto">
 </iframe>
 {% endif %}
-
+<!--
 <h4>This is the workshop template.  Use it to create your own website.
 Delete this line and email the link to your workshop page to admin@software-carpentry.org.
 If this is a self organized workshop, please be sure to include any other details
 Software Carpentry staff may need to know in your email.</h4>
-
+-->
 
 <h2 id="general">General Information</h2>
 
@@ -124,13 +124,14 @@ Software Carpentry staff may need to know in your email.</h4>
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
-<!--
+
 <!--
   ACCESSIBILITY
 
   Modify the block below if there are any barriers to accessibility or
   special instructions.
 -->
+<!--
 <p id="accessibility">
   <strong>Accessibility:</strong> We are committed to making this workshop
   accessible to everybody.
@@ -173,8 +174,9 @@ Software Carpentry staff may need to know in your email.</h4>
 -->
 <h2 id="schedule">Schedule</h2>
 
-<!--
+
 <!-- DO NOT EDIT SURVEY LINKS -->
+<!--
 <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
@@ -187,13 +189,13 @@ Software Carpentry staff may need to know in your email.</h4>
     <table class="table table-striped">
       <tr> <td>08:30-09:00</td> <td> Set-up / Accounts </td> </tr>
       <tr> <td>09:00-09:30</td> <td> HCC Overview </td> </tr>
-      <tr> <td>09:30-10:30</td> <td> Automating Tasks: Bash/Shell Programming </td> </tr>
+      <tr> <td>09:30-10:30</td> <td> <a href="https://eharstad.github.io/shell-novice/">Automating Tasks: Bash/Shell Programming </a></td> </tr>
       <tr> <td>10:30-10:45</td> <td> Coffee Break </td> </tr>
-      <tr> <td>10:45-12:00</td> <td> Automating Tasks: Bash/Shell Programming (continued) </td> </tr>
+      <tr> <td>10:45-12:00</td> <td> <a href="https://eharstad.github.io/shell-novice/">Automating Tasks: Bash/Shell Programming (continued)</a> </td> </tr>
       <tr> <td>12:00-13:00</td> <td> Lunch Break (<it>sponsored by Dell</it>) </td> </tr>
-      <tr> <td>13:00-14:30</td> <td> Automating Tasks: Bash/Shell Programming (continued) </td> </tr>
+      <tr> <td>13:00-14:30</td> <td> <a href="https://eharstad.github.io/shell-novice/">Automating Tasks: Bash/Shell Programming (continued)</a> </td> </tr>
       <tr> <td>14:30-14:45</td> <td> Coffee Break </td> </tr>
-      <tr> <td>14:45-17:00</td> <td> Version Control with Git </td> </tr>
+      <tr> <td>14:45-17:00</td> <td> <a href="http://eharstad.github.io/git-novice/">Version Control with Git </a></td> </tr>
     </table>
   </div>
   <div class="col-md-6">
@@ -361,16 +363,22 @@ Software Carpentry staff may need to know in your email.</h4>
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need
-  access to the software described below. In addition, you will
-  need an up-to-date web browser.
+  To participate in this workshop, you will need to <a href="http://hcc.unl.edu/new-user-request">sign up for an HCC account</a> (if you do not already have one).  Please complete the account application and <a href="https://hcc-docs.unl.edu/display/HCCDOC/Setting+up+and+using+Duo">DUO two-factor authentication setup</a> before Thursday.  This process requires advisor approval (via email) and a visit to the HCC offices in the Schorr Center to activate your account, so it can sometimes take a day or more to complete.  Please plan accordingly.  If you still do not have your account set up by Thursday, please arrive at the workshop by 8:30 a.m. to get help. 
 </p>
+<p>
+  Once you have your HCC account and DUO set up, please make sure that you are able to log into the HCC clusters (instructions for <a href="https://hcc-docs.unl.edu/display/HCCDOC/For+Windows+Users">Windows Users</a> and <a href="https://hcc-docs.unl.edu/pages/viewpage.action?pageId=2851290">Mac/Linux Users</a>).  If you have any problems logging in, please email: hcc-support@unl.edu.
+</p>
+<p>
+On Friday we will be demonstrating <a href="https://hcc-docs.unl.edu/display/HCCDOC/Allinea+Performance+Reports">Allinea Performance Reports on HCC</a> for profiling and debugging software.  Please follow the setup instructions <a href="https://hcc-docs.unl.edu/display/HCCDOC/Using+Allinea+Forge+via+Reverse+Connect">here</a> before arriving on Friday.  If you have any problems, please email us at hcc-support@unl.edu or arrive by 8:30 a.m. to receive help with the setup.
+</p>
+<!--
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
+-->
+<!--
 <div id="shell"> <!-- Start of 'shell' section. -->
   <h3>The Bash Shell</h3>
 
@@ -578,7 +586,9 @@ Software Carpentry staff may need to know in your email.</h4>
       </p>
     </div>
   </div>
-</div> <!-- End of 'editor' section. -->
+</div> 
+-->
+<!-- End of 'editor' section. -->
 
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
