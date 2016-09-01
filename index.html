@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "FIXME"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for host, lead instructor, or whoever else is handling questions
-etherpad:             # optional: URL for the workshop Etherpad if there is one
+carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
+venue: "University of Nebraska - Lincoln"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Nebraska Union (City Campus) - Colonial Room / 1400 R Street, Lincoln, NE 68588"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "40.817591,-96.700252"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+humandate: "Sept. 8, 2015"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2016-09-08      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2016-09-08        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Emelie Harstad"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Jingchao Zhang", "Adam Caprez", "Huijun Zhu", "Natasha Pavlovikj", "Derek Weitzel", "David Swanson", "William McClung"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "hcc-support@unl.edu"      # contact email address for host, lead instructor, or whoever else is handling questions
+etherpad:  https://public.etherpad-mozilla.org/p/2016-09-08-UNL           # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -125,6 +125,7 @@ Software Carpentry staff may need to know in your email.</h4>
 </p>
 
 <!--
+<!--
   ACCESSIBILITY
 
   Modify the block below if there are any barriers to accessibility or
@@ -147,6 +148,7 @@ Software Carpentry staff may need to know in your email.</h4>
   <a href="mailto:{{page.contact}}">get in touch</a> and we will
   attempt to provide them.
 </p>
+-->
 
 <!--
   CONTACT EMAIL ADDRESS
@@ -171,33 +173,40 @@ Software Carpentry staff may need to know in your email.</h4>
 -->
 <h2 id="schedule">Schedule</h2>
 
+<!--
 <!-- DO NOT EDIT SURVEY LINKS -->
 <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+-->
 
 <div class="row">
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>08:30-09:00</td> <td> Set-up / Accounts </td> </tr>
+      <tr> <td>09:00-09:30</td> <td> HCC Overview </td> </tr>
+      <tr> <td>09:30-10:30</td> <td> Automating Tasks: Bash/Shell Programming </td> </tr>
+      <tr> <td>10:30-10:45</td> <td> Coffee Break </td> </tr>
+      <tr> <td>10:45-12:00</td> <td> Automating Tasks: Bash/Shell Programming (continued) </td> </tr>
+      <tr> <td>12:00-13:00</td> <td> Lunch Break (<it>sponsored by Dell</it>) </td> </tr>
+      <tr> <td>13:00-14:30</td> <td> Automating Tasks: Bash/Shell Programming (continued) </td> </tr>
+      <tr> <td>14:30-14:45</td> <td> Coffee Break </td> </tr>
+      <tr> <td>14:45-17:00</td> <td> Version Control with Git </td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>08:30-09:00</td> <td> Set-up / Accounts </td> </tr>
+      <tr> <td>09:00-10:30</td> <td> Introduction to HCC: resources, data handing, software modules and job submission </td> </tr>
+      <tr> <td>10:30-10:45</td> <td> Coffe Break </td> </tr>
+      <tr> <td>10:45-12:00</td> <td> Introduction to HCC: resources, data handing, software modules and job submission (continued) </td> </tr>
+      <tr> <td>12:00-13:00</td> <td> Lunch Break (<it>sponsored by Dell</it>) </td> </tr>
+      <tr> <td>13:00-14:30</td> <td> Parallel Programming with MPI </td> </tr>
+      <tr> <td>14:30-14:45</td> <td> Coffee Break </td> </tr>
+      <tr> <td>14:45-16:00</td> <td> Debugging and Profiling Tools </td> </tr>      
     </table>
   </div>
 </div>
@@ -258,6 +267,8 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
     </ul>
   </div>
+
+  <!--
   <div class="col-md-6">
     <h3 id="syllabus-python">Programming in Python</h3>
     <ul>
@@ -271,6 +282,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
     </ul>
   </div>
+  -->
   <!--
   <div class="col-md-6">
     <h3 id="syllabus-r">Programming in R</h3>
@@ -314,6 +326,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
     </ul>
   </div>
+  <!--
   <div class="col-md-6">
     <h3 id="syllabus-sql">Managing Data with SQL</h3>
     <ul>
@@ -328,6 +341,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
     </ul>
   </div>
+  -->
 </div>
 
 <hr/>
